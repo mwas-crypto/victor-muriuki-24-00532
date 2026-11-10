@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover freshly brewed coffee and delicious treats at Savanna Brew Café.">
-    <title>Home | Savanna Brew Café</title>
+
+    <title>Savanna Brew Café | Home</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Website Header -->
-    <header class="site-header">
-        <a href="index.html" class="logo">
+    <!-- Navigation -->
+    <header class="header">
+        <div class="logo">
             <img src="images/savanna-brew-logo.png"
-                 alt="Savanna Brew Café logo">
-        </a>
+                 alt="Savanna Brew Café Logo">
+            <h2>Savanna Brew Café</h2>
+        </div>
 
-        <nav class="main-nav" aria-label="Main navigation">
+        <nav class="navbar">
             <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
@@ -26,98 +28,128 @@
         </nav>
     </header>
 
-    <!-- Homepage Hero Section -->
-    <main>
-        <section class="hero">
-            <div class="hero-overlay"></div>
-
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
             <div class="hero-content">
-                <p class="hero-label">YOUR FAVOURITE COFFEE SPOT</p>
+                <p class="hero-subtitle">
+                    FRESHLY BREWED, BEAUTIFULLY SERVED
+                </p>
 
-                <h1>Welcome to<br>Savanna Brew Café</h1>
+                <h1>Your Perfect Cup<br>Begins Here</h1>
 
-                <p class="hero-description">
-                    Discover the perfect blend of freshly brewed coffee,
-                    delicious treats and a warm, welcoming atmosphere.
+                <p>
+                    Discover the rich aroma of freshly brewed coffee,
+                    delicious pastries and the warmth of a welcoming café.
                 </p>
 
                 <div class="hero-buttons">
-                    <a href="menu.html" class="button">
-                        Explore Our Menu
-                    </a>
-
-                    <a href="about.html" class="button button-outline">
-                        Our Story
+                    <a href="menu.html" class="btn">Explore Our Menu</a>
+                    <a href="about.html" class="btn btn-outline">
+                        Discover Our Story
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Introduction Section -->
-        <section class="welcome-section">
-            <div class="section-heading">
-                <p class="eyebrow">A warm cup, a happy moment</p>
-                <h2>More Than Just Coffee</h2>
+    <!-- Welcome Section -->
+    <section class="welcome">
+        <div class="welcome-text">
+            <p class="section-label">WELCOME TO SAVANNA BREW</p>
 
-                <p>
-                    At Savanna Brew Café, every cup is an invitation to slow
-                    down, relax and enjoy the little things in life.
-                    Whether you are meeting friends, studying or taking a
-                    break, we have something special waiting for you.
-                </p>
+            <h2>A Little Coffee, A Lot of Comfort</h2>
+
+            <p>
+                At Savanna Brew Café, we believe every great day can begin
+                with a wonderful cup of coffee. Enjoy freshly prepared
+                drinks, tasty treats and a relaxing atmosphere.
+            </p>
+
+            <p>
+                Whether you are meeting friends, taking a break or getting
+                some work done, we have a comfortable place waiting for you.
+            </p>
+
+            <a href="about.html" class="text-link">Learn More About Us →</a>
+        </div>
+
+        <div class="welcome-image">
+            <img src="images/cappuccino.jpg"
+                 alt="Freshly prepared cappuccino">
+        </div>
+    </section>
+
+    <!-- Featured Items -->
+    <section class="featured">
+        <div class="section-heading">
+            <p class="section-label">A TASTE OF OUR CAFÉ</p>
+            <h2>Our Customer Favourites</h2>
+            <p>Something delicious for every coffee break.</p>
+        </div>
+
+        <div class="featured-container">
+
+            <div class="featured-card">
+                <img src="images/latte.jpg" alt="Fresh coffee latte">
+                <div class="card-content">
+                    <h3>Classic Latte</h3>
+                    <p>Smooth espresso blended with creamy steamed milk.</p>
+                </div>
             </div>
 
-            <div class="feature-grid">
-                <article class="feature-card">
-                    <div class="feature-icon">01</div>
-                    <h3>Freshly Brewed</h3>
-                    <p>
-                        Enjoy comforting coffee prepared with care
-                        and attention to every detail.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">02</div>
-                    <h3>Delicious Treats</h3>
-                    <p>
-                        Pair your favourite drink with pastries and
-                        sweet treats made for enjoyable moments.
-                    </p>
-                </article>
-
-                <article class="feature-card">
-                    <div class="feature-icon">03</div>
-                    <h3>A Welcoming Space</h3>
-                    <p>
-                        Find a comfortable place to relax, catch up
-                        with friends or simply enjoy your own company.
-                    </p>
-                </article>
+            <div class="featured-card">
+                <img src="images/croissant.jpg" alt="Freshly baked croissant">
+                <div class="card-content">
+                    <h3>Fresh Croissants</h3>
+                    <p>Flaky, golden pastries perfect for your morning.</p>
+                </div>
             </div>
-        </section>
 
-        <!-- Menu Promotion -->
-        <section class="menu-promotion">
-            <div class="promotion-content">
-                <p class="eyebrow">Something delicious awaits</p>
-                <h2>Your Next Favourite Is Here</h2>
-                <p>
-                    From smooth lattes to freshly baked pastries,
-                    explore the flavours waiting for you at our café.
-                </p>
-
-                <a href="menu.html" class="button">
-                    View Our Menu
-                </a>
+            <div class="featured-card">
+                <img src="images/chocolate-cake.jpg"
+                     alt="Delicious chocolate cake">
+                <div class="card-content">
+                    <h3>Chocolate Cake</h3>
+                    <p>A rich, chocolatey treat for your sweet cravings.</p>
+                </div>
             </div>
-        </section>
-    </main>
 
-    <!-- Website Footer -->
-    <footer class="site-footer">
-        <p>&copy; 2026 Savanna Brew Café. All rights reserved.</p>
-        <p>Fresh coffee. Lovely moments.</p>
+        </div>
+
+        <a href="menu.html" class="btn">View Full Menu</a>
+    </section>
+
+    <!-- Promotional Section -->
+    <section class="cafe-promo">
+        <div>
+            <p class="section-label">YOUR FAVOURITE COFFEE SPOT</p>
+            <h2>Good Coffee. Good Moments.</h2>
+            <p>
+                Make time for yourself and enjoy a little café comfort
+                with every visit.
+            </p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Savanna Brew Café</h2>
+
+        <p>Fresh coffee, delicious treats and memorable moments.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Savanna Brew Café. All rights reserved.
+        </p>
     </footer>
 
 </body>
