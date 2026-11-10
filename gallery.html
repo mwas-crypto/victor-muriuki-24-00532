@@ -4,145 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery | Savanna Brew Café</title>
-
-    <link rel="stylesheet" href="gallery.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <a href="index.html" class="logo">
-            <span class="coffee-icon">☕</span>
-            <span class="logo-text">
-                <strong>Savanna Brew</strong>
-                <small>COFFEE · GOOD VIBES · KENYA</small>
-            </span>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="savanna-brew-logo.png" alt="Savanna Brew Café logo">
         </a>
-
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
-            <a href="gallery.html" class="active">Gallery</a>
+            <a class="active" href="gallery.html">Gallery</a>
             <a href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Gallery Banner -->
-    <section class="gallery-banner">
-        <div class="banner-content">
-            <h1>Photo Gallery</h1>
-            <span class="gold-line"></span>
-        </div>
-    </section>
+    <main>
+        <section class="page-banner gallery-banner">
+            <div class="banner-content">
+                <p class="eyebrow">A glimpse into our café</p>
+                <h1>Our Gallery</h1>
+                <p>Take a look at the coffee and treats that make every visit special.</p>
+            </div>
+        </section>
 
-    <!-- Gallery Section -->
-    <main class="gallery-section">
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Little moments, lovely flavours</p>
+                <h2>Life at Savanna Brew</h2>
+                <p>From creamy lattes to freshly baked pastries, here are a few of our favourites.</p>
+            </div>
 
-        <div class="gallery-grid">
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
-                         alt="Freshly prepared latte coffee">
-                </div>
-                <figcaption>Latte</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=700&q=85"
-                         alt="Creamy cappuccino with chocolate">
-                </div>
-                <figcaption>Cappuccino</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?auto=format&fit=crop&w=700&q=85"
-                         alt="Refreshing iced coffee">
-                </div>
-                <figcaption>Iced Coffee</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&w=700&q=85"
-                         alt="Iced latte served in a glass">
-                </div>
-                <figcaption>Iced Latte</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=85"
-                         alt="Freshly baked golden croissant">
-                </div>
-                <figcaption>Croissant</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?auto=format&fit=crop&w=700&q=85"
-                         alt="Freshly baked muffin">
-                </div>
-                <figcaption>Muffin</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=85"
-                         alt="Rich chocolate cake">
-                </div>
-                <figcaption>Chocolate Cake</figcaption>
-            </figure>
-
-            <figure class="gallery-card">
-                <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=700&q=85"
-                         alt="Colourful fresh fruit dessert">
-                </div>
-                <figcaption>Fruit Tart</figcaption>
-            </figure>
-
-        </div>
+            <div class="gallery-grid">
+                <figure class="gallery-item">
+                    <img src="cappuccino.jpg" alt="Cappuccino with milk foam">
+                    <figcaption>A comforting cappuccino</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="latte.jpg" alt="Freshly prepared latte">
+                    <figcaption>Our classic latte</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="iced-coffee.jpg" alt="Chilled iced coffee">
+                    <figcaption>Cool coffee moments</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="iced-latte.jpg" alt="Iced latte in a glass">
+                    <figcaption>Fresh and refreshing</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="croissant.jpg" alt="Golden croissant">
+                    <figcaption>Flaky pastry goodness</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="chocolate-cake.jpg" alt="Slice of chocolate cake">
+                    <figcaption>Chocolate indulgence</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="fruit-tart.jpg" alt="Fruit tart dessert">
+                    <figcaption>A colourful sweet treat</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="muffin.jpg" alt="Freshly baked muffin">
+                    <figcaption>Fresh from the oven</figcaption>
+                </figure>
+            </div>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer-brand">
-            <span class="footer-cup">☕</span>
-            <div>
-                <h2>Savanna Brew</h2>
-                <p>Brewed in Kenya. Served with love.</p>
-            </div>
-        </div>
-
-        <div class="footer-social">
-            <h4>Follow Us:</h4>
-            <div class="social-links">
-                <a href="https://facebook.com" aria-label="Facebook">f</a>
-                <a href="https://instagram.com" aria-label="Instagram">◎</a>
-                <a href="https://x.com" aria-label="X">𝕏</a>
-                <a href="https://youtube.com" aria-label="YouTube">▶</a>
-            </div>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact Us:</h4>
-            <p>✉ info@savannabrew.co.ke</p>
-            <p>☎ +254 700 123 456</p>
-        </div>
-
-        <div class="footer-decoration">☕</div>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 Savanna Brew Café. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
