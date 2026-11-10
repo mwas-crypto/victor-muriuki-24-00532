@@ -3,294 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact & Reservations | Savanna Brew Café</title>
-
-    <link rel="stylesheet" href="contact.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Poppins:wght@400;500;600&display=swap"
-          rel="stylesheet">
+    <title>Contact Us | Savanna Brew Café</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-
-    <!-- Navigation Bar -->
-    <header class="navbar">
-        <a href="index.html" class="logo">
-            <span class="coffee-icon">☕</span>
-            <span class="logo-text">
-                <strong>Savanna Brew</strong>
-                <small>COFFEE · GOOD VIBES · KENYA</small>
-            </span>
+    <header class="site-header">
+        <a class="logo" href="index.html">
+            <img src="savanna-brew-logo.png" alt="Savanna Brew Café logo">
         </a>
-
-        <nav>
+        <nav class="main-nav" aria-label="Main navigation">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
-            <a href="contact.html" class="active">Contact</a>
+            <a class="active" href="contact.html">Contact</a>
         </nav>
     </header>
 
-    <!-- Page Banner -->
-    <section class="contact-banner">
-        <div class="banner-content">
-            <h1>Contact & Reservations</h1>
-            <span class="gold-line"></span>
-        </div>
-    </section>
-
-    <!-- Main Content -->
-    <main class="contact-container">
-
-        <!-- Reservation Form -->
-        <section class="panel reservation-panel">
-
-            <h2 class="panel-heading">
-                <span>▦</span> RESERVATION FORM
-            </h2>
-
-            <form class="reservation-form"
-                  action="#"
-                  method="get">
-
-                <div class="form-row">
-                    <label for="full-name">Full name:</label>
-                    <input type="text"
-                           id="full-name"
-                           name="fullName"
-                           placeholder="Enter your full name"
-                           autocomplete="name"
-                           required>
-                </div>
-
-                <div class="form-row">
-                    <label for="email">Email:</label>
-                    <input type="email"
-                           id="email"
-                           name="email"
-                           placeholder="Enter your email address"
-                           autocomplete="email"
-                           required>
-                </div>
-
-                <div class="form-row">
-                    <label for="phone">Phone:</label>
-                    <input type="tel"
-                           id="phone"
-                           name="phone"
-                           placeholder="Enter your phone number"
-                           autocomplete="tel">
-                </div>
-
-                <div class="form-row">
-                    <label for="date">Date:</label>
-                    <input type="date"
-                           id="date"
-                           name="date"
-                           required>
-                </div>
-
-                <div class="form-row">
-                    <label for="time">Time:</label>
-                    <select id="time" name="time" required>
-                        <option value="">Select time</option>
-                        <option value="07:00">7:00 AM</option>
-                        <option value="08:00">8:00 AM</option>
-                        <option value="09:00">9:00 AM</option>
-                        <option value="10:00">10:00 AM</option>
-                        <option value="11:00">11:00 AM</option>
-                        <option value="12:00">12:00 PM</option>
-                        <option value="13:00">1:00 PM</option>
-                        <option value="14:00">2:00 PM</option>
-                        <option value="15:00">3:00 PM</option>
-                        <option value="16:00">4:00 PM</option>
-                        <option value="17:00">5:00 PM</option>
-                        <option value="18:00">6:00 PM</option>
-                        <option value="19:00">7:00 PM</option>
-                        <option value="20:00">8:00 PM</option>
-                        <option value="21:00">9:00 PM</option>
-                    </select>
-                </div>
-
-                <div class="form-row">
-                    <label for="guests">Guests:</label>
-                    <select id="guests" name="guests" required>
-                        <option value="">Select number of guests</option>
-                        <option value="1">1 guest</option>
-                        <option value="2">2 guests</option>
-                        <option value="3">3 guests</option>
-                        <option value="4">4 guests</option>
-                        <option value="5">5 guests</option>
-                        <option value="6">6 guests</option>
-                        <option value="7">7 guests</option>
-                        <option value="8">8 guests</option>
-                        <option value="9">9 guests</option>
-                        <option value="10">10 guests</option>
-                    </select>
-                </div>
-
-                <fieldset class="occasion-group">
-                    <legend>Occasion:</legend>
-
-                    <div class="radio-options">
-                        <label>
-                            <input type="radio"
-                                   name="occasion"
-                                   value="Casual"
-                                   required>
-                            Casual
-                        </label>
-
-                        <label>
-                            <input type="radio"
-                                   name="occasion"
-                                   value="Birthday">
-                            Birthday
-                        </label>
-
-                        <label>
-                            <input type="radio"
-                                   name="occasion"
-                                   value="Business">
-                            Business
-                        </label>
-                    </div>
-                </fieldset>
-
-                <div class="message-row">
-                    <label for="message">Message:</label>
-                    <textarea id="message"
-                              name="message"
-                              rows="3"
-                              placeholder="Any special requests?"></textarea>
-                </div>
-
-                <button type="submit" class="book-button">
-                    <span>▦</span> Book a Table
-                </button>
-
-                <p class="form-note">
-                    Please complete the required fields before booking.
-                </p>
-
-            </form>
+    <main>
+        <section class="page-banner contact-banner">
+            <div class="banner-content">
+                <p class="eyebrow">We would love to hear from you</p>
+                <h1>Contact Us</h1>
+                <p>Have a question or want to learn more about our café? Get in touch.</p>
+            </div>
         </section>
 
-        <!-- Contact Information and Map -->
-        <section class="panel find-panel">
-
-            <h2 class="panel-heading">
-                <span>📍</span> FIND US
-            </h2>
-
-            <div class="contact-details">
-
-                <div class="details-list">
-                    <div class="detail-item">
-                        <span class="detail-icon">📍</span>
-                        <p>
-                            <strong>14 Coffee Lane,</strong><br>
-                            Westlands, Nairobi
-                        </p>
-                    </div>
-
-                    <div class="detail-item">
-                        <span class="detail-icon">✉</span>
-                        <a href="mailto:info@savannabrew.co.ke">
-                            info@savannabrew.co.ke
-                        </a>
-                    </div>
-
-                    <div class="detail-item">
-                        <span class="detail-icon">☎</span>
-                        <a href="tel:+254700123456">
-                            +254 700 123 456
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Opening Hours -->
-                <div class="opening-hours">
-                    <h3>◷ OPENING HOURS</h3>
-
-                    <div class="hours-row">
-                        <span>Monday – Friday</span>
-                        <strong>9:00 AM – 9:00 PM</strong>
-                    </div>
-
-                    <div class="hours-row">
-                        <span>Saturday</span>
-                        <strong>7:00 AM – 10:00 PM</strong>
-                    </div>
-
-                    <div class="hours-row">
-                        <span>Sunday</span>
-                        <strong>8:00 AM – 8:00 PM</strong>
-                    </div>
-                </div>
-
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Say hello</p>
+                <h2>Let's Talk Coffee</h2>
+                <p>Use the details below or fill in the form to get in touch.</p>
             </div>
 
-            <!-- Google Maps -->
-            <div class="map-container">
-                <iframe
-                    title="Map showing Westlands, Nairobi"
-                    src="https://maps.google.com/maps?q=Westlands%2C%20Nairobi%2C%20Kenya&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"
-                    allowfullscreen>
-                </iframe>
+            <div class="contact-layout">
+                <div class="contact-details">
+                    <article class="contact-card">
+                        <h3>Visit Us</h3>
+                        <p>Our café location</p>
+                        <p>Replace this with the actual address.</p>
+                    </article>
+                    <article class="contact-card">
+                        <h3>Call or Email</h3>
+                        <p>Phone: Add your café phone number</p>
+                        <p>Email: Add your café email address</p>
+                    </article>
+                    <article class="contact-card">
+                        <h3>Opening Hours</h3>
+                        <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
+                        <p>Saturday – Sunday: 9:00 AM – 5:00 PM</p>
+                    </article>
+                </div>
+
+                <form class="contact-form" action="#" method="post">
+                    <h2>Send Us a Message</h2>
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                    <button class="button" type="submit">Send Message</button>
+                    <p class="form-note">Demonstration form: messages are not sent until a form service or backend is connected.</p>
+                </form>
             </div>
-
-            <a class="maps-button"
-               href="https://www.google.com/maps/search/?api=1&query=Westlands%2C+Nairobi%2C+Kenya"
-               target="_blank"
-               rel="noopener noreferrer">
-                📍 Open in Google Maps ↗
-            </a>
-
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-
-        <div class="footer-brand">
-            <span class="footer-cup">☕</span>
-
-            <div>
-                <h2>Savanna Brew</h2>
-                <p>Brewed in Kenya. Served with love.</p>
-            </div>
-        </div>
-
-        <div class="footer-social">
-            <h4>Follow Us:</h4>
-
-            <div class="social-links">
-                <a href="https://facebook.com"
-                   aria-label="Facebook">f</a>
-                <a href="https://instagram.com"
-                   aria-label="Instagram">◎</a>
-                <a href="https://x.com"
-                   aria-label="X">𝕏</a>
-                <a href="https://youtube.com"
-                   aria-label="YouTube">▶</a>
-            </div>
-        </div>
-
-        <div class="footer-contact">
-            <h4>Contact Us:</h4>
-            <p>✉ info@savannabrew.co.ke</p>
-            <p>☎ +254 700 123 456</p>
-        </div>
-
-        <div class="footer-decoration">☕</div>
-
+    <footer class="site-footer">
+        <p>&copy; 2026 Savanna Brew Café. All rights reserved.</p>
     </footer>
-
 </body>
 </html>
