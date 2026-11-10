@@ -3,81 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | Savanna Brew Café</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <header class="site-header">
-        <a class="logo" href="index.html">
-            <img src="savanna-brew-logo.png" alt="Savanna Brew Café logo">
+
+    <!-- Navigation -->
+    <header class="header">
+        <a href="index.html" class="logo">
+            <img src="images/savanna-brew-logo.png"
+                 alt="Savanna Brew Café Logo">
+            <span>Savanna Brew Café</span>
         </a>
-        <nav class="main-nav" aria-label="Main navigation">
+
+        <nav class="navbar">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <a href="menu.html">Menu</a>
             <a href="gallery.html">Gallery</a>
-            <a class="active" href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
         </nav>
     </header>
 
-    <main>
-        <section class="page-banner contact-banner">
-            <div class="banner-content">
-                <p class="eyebrow">We would love to hear from you</p>
-                <h1>Contact Us</h1>
-                <p>Have a question or want to learn more about our café? Get in touch.</p>
-            </div>
-        </section>
+    <!-- Contact Banner -->
+    <section class="contact-banner">
+        <div class="contact-banner-overlay">
+            <h1>Get in Touch</h1>
+            <p>We would love to hear from you.</p>
+        </div>
+    </section>
 
-        <section class="section">
-            <div class="section-heading">
-                <p class="eyebrow">Say hello</p>
-                <h2>Let's Talk Coffee</h2>
-                <p>Use the details below or fill in the form to get in touch.</p>
-            </div>
+    <!-- Contact Information and Form -->
+    <section class="contact-section">
 
-            <div class="contact-layout">
-                <div class="contact-details">
-                    <article class="contact-card">
-                        <h3>Visit Us</h3>
-                        <p>Our café location</p>
-                        <p>Replace this with the actual address.</p>
-                    </article>
-                    <article class="contact-card">
-                        <h3>Call or Email</h3>
-                        <p>Phone: Add your café phone number</p>
-                        <p>Email: Add your café email address</p>
-                    </article>
-                    <article class="contact-card">
-                        <h3>Opening Hours</h3>
-                        <p>Monday – Friday: 8:00 AM – 6:00 PM</p>
-                        <p>Saturday – Sunday: 9:00 AM – 5:00 PM</p>
-                    </article>
+        <div class="contact-intro">
+            <p class="section-label">LET'S CONNECT</p>
+            <h2>Visit or Contact Us</h2>
+            <p>
+                Have a question, a suggestion or simply want to say hello?
+                Get in touch with Savanna Brew Café. We look forward to
+                welcoming you.
+            </p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <span class="contact-icon">📍</span>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Visit us at our café location.</p>
+                    </div>
                 </div>
 
-                <form class="contact-form" action="#" method="post">
-                    <h2>Send Us a Message</h2>
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <div class="contact-item">
+                    <span class="contact-icon">📞</span>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>Add your café phone number here.</p>
+                    </div>
+                </div>
 
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <div class="contact-item">
+                    <span class="contact-icon">✉️</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>Add your café email address here.</p>
+                    </div>
+                </div>
 
-                    <label for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" placeholder="What is your message about?" required>
-
-                    <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
-
-                    <button class="button" type="submit">Send Message</button>
-                    <p class="form-note">Demonstration form: messages are not sent until a form service or backend is connected.</p>
-                </form>
+                <div class="contact-item">
+                    <span class="contact-icon">☕</span>
+                    <div>
+                        <h3>Opening Hours</h3>
+                        <p>Add your café opening hours here.</p>
+                    </div>
+                </div>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <footer class="site-footer">
-        <p>&copy; 2026 Savanna Brew Café. All rights reserved.</p>
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post" class="contact-form">
+
+                <label for="name">Your Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="subject">Subject</label>
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="What is your message about?"
+                    required
+                >
+
+                <label for="message">Your Message</label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message here..."
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Café Image -->
+    <section class="contact-image">
+        <img
+            src="images/contact-coffee-banner.jpg"
+            alt="Coffee prepared at Savanna Brew Café"
+        >
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h2>Savanna Brew Café</h2>
+
+        <p>Fresh coffee, delicious treats and warm hospitality.</p>
+
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Savanna Brew Café. All rights reserved.
+        </p>
     </footer>
+
 </body>
 </html>
