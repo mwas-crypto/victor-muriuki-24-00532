@@ -1,89 +1,228 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Savanna Brew Café</title>
+    <title>Contact Us | Savanna Brew Café</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
-    <a href="index.html" class="logo">
-        <img src="image/savanna-brew-logo.png" alt="Savanna Brew Café Logo">
-        <span>Savanna Brew Café</span>
-    </a>
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <img src="savanna-brew-logo.png"
+                 alt="Savanna Brew Café logo">
+        </a>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="gallery.html" class="active">Gallery</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
 
-<section class="page-banner gallery-banner">
-    <div>
-        <p class="eyebrow">A GLIMPSE OF OUR WORLD</p>
-        <h1>Our Gallery</h1>
-        <p>Beautiful moments, delicious treats and great coffee.</p>
-    </div>
-</section>
+    <main>
+        <!-- Contact Banner -->
+        <section class="page-banner contact-banner">
+            <div class="banner-content">
+                <h1>Contact Savanna Brew</h1>
+                <p>We would love to hear from you!</p>
+            </div>
+        </section>
 
-<section class="gallery-section section">
-    <h2>Moments at Savanna Brew</h2>
-    <p class="section-description">
-        Take a look at some of our favourite coffee and pastry moments.
-    </p>
+        <!-- Contact Information -->
+        <section class="contact-section">
+            <div class="contact-container">
 
-    <div class="gallery-grid">
-        <figure>
-            <img src="image/latte.jpg" alt="Fresh latte">
-            <figcaption>Classic Latte</figcaption>
-        </figure>
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
 
-        <figure>
-            <img src="image/cappuccino.jpg" alt="Creamy cappuccino">
-            <figcaption>Cappuccino Moments</figcaption>
-        </figure>
+                    <p>
+                        <strong>Address:</strong>
+                        14 Coffee Lane, Westlands, Nairobi
+                    </p>
 
-        <figure>
-            <img src="image/iced-coffee.jpg" alt="Chilled iced coffee">
-            <figcaption>Iced Coffee</figcaption>
-        </figure>
+                    <p>
+                        <strong>Phone:</strong>
+                        <a href="tel:+254700123456">
+                            +254 700 123 456
+                        </a>
+                    </p>
 
-        <figure>
-            <img src="image/iced-latte.jpg" alt="Refreshing iced latte">
-            <figcaption>Iced Latte</figcaption>
-        </figure>
+                    <p>
+                        <strong>Email:</strong>
+                        <a href="mailto:hello@savannabrew.example">
+                            hello@savannabrew.example
+                        </a>
+                    </p>
 
-        <figure>
-            <img src="image/croissants.jpg" alt="Golden croissants">
-            <figcaption>Freshly Baked</figcaption>
-        </figure>
+                    <p>
+                        Visit us for freshly brewed Kenyan coffee
+                        and delicious pastries.
+                    </p>
+                </div>
 
-        <figure>
-            <img src="image/chocolate-cake.jpg" alt="Chocolate cake">
-            <figcaption>Chocolate Delight</figcaption>
-        </figure>
+                <div class="contact-details">
+                    <h2>Find Us</h2>
 
-        <figure>
-            <img src="image/fruit-tart.jpg" alt="Fruit tart">
-            <figcaption>Sweet Treats</figcaption>
-        </figure>
+                    <p>
+                        We are located in Westlands, Nairobi.
+                        Use the map below to explore the area.
+                    </p>
 
-        <figure>
-            <img src="image/muffin.jpg" alt="Fresh muffin">
-            <figcaption>Little Indulgences</figcaption>
-        </figure>
-    </div>
-</section>
+                    <iframe
+                        src="https://www.google.com/maps?q=Westlands,Nairobi,Kenya&output=embed"
+                        width="100%"
+                        height="300"
+                        style="border:0;"
+                        loading="lazy"
+                        title="Map showing Westlands, Nairobi">
+                    </iframe>
+                </div>
 
-<footer>
-    <p>&copy; 2026 Savanna Brew Café. All rights reserved.</p>
-    <p><a href="contact.html">Come and visit us</a></p>
-</footer>
+            </div>
+        </section>
+
+        <!-- Opening Hours -->
+        <section class="hours-section">
+            <h2>Our Opening Hours</h2>
+
+            <div class="table-container">
+                <table class="hours-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Opening Hours</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Monday – Friday</td>
+                            <td>7:00 AM – 9:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Saturday</td>
+                            <td>8:00 AM – 10:00 PM</td>
+                        </tr>
+                        <tr>
+                            <td>Sunday</td>
+                            <td>9:00 AM – 6:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Reservation Form -->
+        <section class="reservation-form">
+            <h2>Make an Enquiry or Reservation</h2>
+
+            <form action="#" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests">
+                    <option value="1">1 guest</option>
+                    <option value="2">2 guests</option>
+                    <option value="3">3 guests</option>
+                    <option value="4">4 guests</option>
+                    <option value="5">5 guests</option>
+                    <option value="6">6 guests</option>
+                    <option value="7">7 guests</option>
+                    <option value="8">8 guests</option>
+                    <option value="9">9 guests</option>
+                    <option value="10">10 guests</option>
+                </select>
+
+                <fieldset>
+                    <legend>Occasion</legend>
+
+                    <label>
+                        <input type="radio" name="occasion"
+                               value="casual" checked>
+                        Casual
+                    </label>
+
+                    <label>
+                        <input type="radio" name="occasion"
+                               value="birthday">
+                        Birthday
+                    </label>
+
+                    <label>
+                        <input type="radio" name="occasion"
+                               value="business">
+                        Business
+                    </label>
+                </fieldset>
+
+                <label for="requests">Special Requests</label>
+                <textarea id="requests" name="requests"
+                          rows="4"></textarea>
+
+                <button type="submit" class="btn">
+                    Submit Enquiry
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>Visit Us</h3>
+                <p>14 Coffee Lane, Westlands, Nairobi</p>
+                <p>Phone: +254 700 123 456</p>
+                <p>Email: hello@savannabrew.example</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <p>Monday – Friday: 7 AM – 9 PM</p>
+                <p>Saturday: 8 AM – 10 PM</p>
+                <p>Sunday: 9 AM – 6 PM</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="https://www.instagram.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Instagram
+                    </a>
+                </p>
+                <p>
+                    <a href="https://www.facebook.com/"
+                       target="_blank" rel="noopener noreferrer">
+                        Facebook
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            &copy; 2026 Savanna Brew Café. All rights reserved.
+        </p>
+    </footer>
 
 </body>
 </html>
